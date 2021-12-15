@@ -49,7 +49,7 @@ public class CameraPointer : MonoBehaviour
         else
         {
             // 如果 物件 不再攝影機前 (隱藏或其他設定) 就跳出 避免錯誤
-            if (hit.collider == null) return;
+            // if (hit.collider == null) return;
 
             // No GameObject detected in front of the camera.
             _gazedAtObject?.SendMessage("OnPointerExit");
